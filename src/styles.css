@@ -1,0 +1,68 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.right {
+  grid-area: right;
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.nameChoice {
+  width: 100%;
+}
+
+.buttonWrapper {
+  width: 100%;
+  padding: 5px;
+}
+
+
+.mainBottom {
+  grid-area: mainBottom;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+ 
+.mainButton {
+  margin-right: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main right right'
+    'mainBottom mainBottom mainBottom mainBottom rightBottom rightBottom';
+  grid-gap: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
